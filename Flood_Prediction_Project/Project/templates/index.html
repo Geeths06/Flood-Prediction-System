@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Flood Prediction</title>
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<link rel="stylesheet"
+href="{{ url_for('static',filename='main.css') }}">
+
+</head>
+
+<body>
+
+<div class="card">
+
+<h1>Flood Prediction</h1>
+
+<form action="/predict" method="POST">
+
+<div class="inputBox">
+<label>🌡 Temperature</label>
+<input type="number" step="any" name="Temperature" required>
+</div>
+
+<div class="inputBox">
+<label>💧 Humidity</label>
+<input type="number" step="any" name="Humidity" required>
+</div>
+
+<div class="inputBox">
+<label>🌊 Cloud Cover</label>
+<input type="number" step="any" name="Cloud Cover" required>
+</div>
+
+<button>
+
+<i class="fa-solid fa-cloud-rain"></i>
+
+Predict
+
+</button>
+
+</form>
+
+</div>
+
+</body>
+
+</html>
